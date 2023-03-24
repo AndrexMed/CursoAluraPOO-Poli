@@ -12,6 +12,7 @@ public class Funcionario {
     private String nombre;
     private String documento;
     private double salario;
+    private int tipo;
     
     public Funcionario(){ //Constructor que se crea por defecto de la clase.
         
@@ -40,6 +41,28 @@ public class Funcionario {
     public void setSalario(double salario) {
         this.salario = salario;
     }
+    
+    
+    public double getBonificacion(){
+        if (tipo == 0) {
+            return this.salario * 0.1;
+        }
+        else if (tipo == 1){
+            return this.salario;
+        }else{
+            return 0;
+        }
+        
+    }
+
+    public int getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(int tipo) {
+        this.tipo = tipo;
+    }
+    
     
     
 }
