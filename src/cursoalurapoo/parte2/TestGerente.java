@@ -13,6 +13,7 @@ public class TestGerente {
         gerente.setTipo(1);
         gerente.setNombre("Giovanni");
         gerente.setClave("Gio");
+        
         System.out.println(gerente.getBonificacion());
         System.out.println(gerente.getNombre());
         System.out.println(gerente.iniciarSesion("Gio"));
