@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package cursoalurapoo.parte2;
 
 /**
@@ -44,7 +40,7 @@ public class Funcionario {
     
     
     public double getBonificacion(){
-        return this.salario * 0.1;
+        return this.salario * 0.05;
     }
 
     public int getTipo() {

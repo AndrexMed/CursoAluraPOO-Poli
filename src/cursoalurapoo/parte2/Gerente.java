@@ -16,8 +16,9 @@ public class Gerente extends Funcionario { // Gerente extiende de Funcionario - 
         return clave == "Gio";
     }
     
+    //Sobrescritura de metodos
     public double getBonificacion(){
         //return this.salario; //No compila ya que salario es privada, y no hace parte de "este" objeto.
-        return super.getSalario(); // Con super tenemos acceso a los metodos de la clase padre en este caso Funcionario.
+        return super.getSalario() + super.getBonificacion(); // Con super tenemos acceso a los metodos de la clase padre en este caso Funcionario.
     }
 }
