@@ -4,7 +4,7 @@ package cursoalurapoo.parte2;
  *
  * @author giova
  */
-public class Funcionario {
+public abstract class Funcionario {
     private String nombre;
     private String documento;
     protected double salario;

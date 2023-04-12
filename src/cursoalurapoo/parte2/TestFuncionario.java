@@ -6,7 +6,9 @@ package cursoalurapoo.parte2;
  */
 public class TestFuncionario {
     public static void main(String[] args) {
-        Funcionario funcionario1 = new Funcionario();
+        //Funcionario funcionario1 = new Funcionario(); NO se puede instanciar ya que es abstracta....
+        //En su lugar, se utiliza como una clase BASE para otras clases derivadas que heredan sus caracteristicas y metodos...
+        Funcionario funcionario1 = new Contador();//
         
         funcionario1.setNombre("Andres");
         funcionario1.setDocumento("12345");
