@@ -37,20 +37,21 @@ public class Cuenta {
     //Metodo que retorna "return"
     public boolean retirar(double valor){
         if (this.saldo >= valor) {
-            this.saldo = this.saldo - valor;
+            this.saldo -= valor; // Se Abrevia
             return true;
         }else{
         return false;
         }
     }
     
-    public boolean transferir(double valor,Cuenta cuenta){
+    public boolean transferir(double valor,Cuenta destino){
         if (this.saldo >= valor) {
-            this.saldo = this.saldo - valor;
-            cuenta.depositar(valor);
+            this.retirar(valor); // Correccion de error
+            destino.depositar(valor); // Correccion de error
             return true;
-        }
+        }else{
         return false;
+        }
     }
     
     public double getSaldo(){ //Getter - por convencion se usa la palabra "get"
