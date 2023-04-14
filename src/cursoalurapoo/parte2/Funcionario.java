@@ -38,10 +38,10 @@ public abstract class Funcionario {
         this.salario = salario;
     }
     
-    
-    public double getBonificacion(){
-        return this.salario * 0.05;
-    }
+    //Este metodo lo ponemos abstractos ya que cada clase necesita su implementacion de forma diferente.
+    //Como el metodo en esta clase no tiene implementacion(reglas de negocio) lo dejamos libre borrando las llaves...
+    //Al volver el metodo abstracto obligamos a las clases hijas a sobreescribirlo...para que cada una le de diferente comportamiento.
+    public abstract double getBonificacion();
 
     public int getTipo() {
         return tipo;
