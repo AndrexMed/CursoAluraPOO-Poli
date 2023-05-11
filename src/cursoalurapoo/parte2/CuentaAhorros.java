@@ -17,5 +17,12 @@ public class CuentaAhorros extends Cuenta {
         double comision = 10;
         return super.retirar(valor + comision);
     }
+
+    //Como este metodo en su clase padre es abstracto me obliga a implementarlo en las clases hijas...
+    @Override
+    public void depositar(double valor) {
+       saldo = this.saldo + valor; //Accede a saldo que esta en Cuenta, ya que esta clase es hija, y saldo esta en "protected"
+       
+    }
     
 }

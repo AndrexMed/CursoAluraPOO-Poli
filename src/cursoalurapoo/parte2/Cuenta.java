@@ -4,8 +4,8 @@ package cursoalurapoo.parte2;
  *
  * @author giova
  */
-public class Cuenta {
-    private double saldo; //Encapsulamiento
+public abstract class Cuenta { //Una clase abstracta puede tener todos los comportamientos, excepto que no puede ser instanciada...
+    protected double saldo; //Con protected saldo es accesible desde sus clases hijas...
     private int agencia; //Encapsulando...
     private int numero;
     private Cliente titular = new Cliente(); // Para hacer referencia de un objeto Cliente con la Cuenta -- Referencia directa
@@ -30,9 +30,8 @@ public class Cuenta {
     }
     
     //Metodo que no retorna, "void"
-    public void depositar(double valor){ //"saldo", is parameter
-        this.saldo = this.saldo + valor;
-    }
+    public abstract void depositar(double valor); //Implementando el metodo como abstracto...
+    //Para definir metodos abstractos la clase tiene que ser abstracta...
     
     //Metodo que retorna "return"
     public boolean retirar(double valor){
