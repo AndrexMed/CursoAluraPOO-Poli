@@ -4,19 +4,9 @@ package cursoalurapoo.parte2;
  *
  * @author giova
  */
-public class Administrador extends Funcionario {
-    
-    private String clave;
-    
-    public void setClave(String clave){
-        this.clave = clave;
-    }
-    
-    public boolean iniciarSesion(String clave){
-        return clave == "Gio";
-    }
+public class Administrador extends FuncionarioAutenticable { // En Java solo
 
-    @Override
+    //Ya no es override
     public double getBonificacion() {
         return 0;
     }

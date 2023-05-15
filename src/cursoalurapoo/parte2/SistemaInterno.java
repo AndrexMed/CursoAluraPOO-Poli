@@ -6,9 +6,9 @@ package cursoalurapoo.parte2;
  */
 public class SistemaInterno {
     
-    private String clave = "123";
+    private String clave = "Gio";
     
-    public  boolean Autenticar(Gerente gerente){
+    public  boolean Autenticar(FuncionarioAutenticable gerente){
         boolean puedeIniciarSesion = gerente.iniciarSesion(clave);
         if (puedeIniciarSesion) {
             System.out.println("Login Exitoso!");
