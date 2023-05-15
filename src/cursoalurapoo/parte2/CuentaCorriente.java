@@ -18,6 +18,11 @@ public class CuentaCorriente extends Cuenta {
         double comision =  2;
         return super.retirar(valor+comision);
     }
+
+    @Override //Su clase padre nos obliga a implementar este metodo, ya que es abstracto en la clase padre...
+    public void depositar(double valor) {
+        
+    }
     
     
 }

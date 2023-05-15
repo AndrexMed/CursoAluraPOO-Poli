@@ -4,7 +4,7 @@ package cursoalurapoo.parte2;
  *
  * @author giova
  */
-public class FuncionarioAutenticable {
+public class FuncionarioAutenticable extends Funcionario {
     
    private String clave;
     
@@ -15,6 +15,11 @@ public class FuncionarioAutenticable {
     public boolean iniciarSesion(String clave){
         return clave == "Gio";
     } 
+
+    @Override
+    public double getBonificacion() {
+        return 0;
+    }
 
     
 }

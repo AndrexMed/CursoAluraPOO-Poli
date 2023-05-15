@@ -6,7 +6,7 @@ package cursoalurapoo.parte2;
  */
 public class Administrador extends FuncionarioAutenticable { // En Java solo
 
-    //Ya no es override
+    @Override //Esta modificando el metodo porque ahora ya esta implementando en su clase Padre...
     public double getBonificacion() {
         return 0;
     }
