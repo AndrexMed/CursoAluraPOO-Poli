@@ -8,7 +8,7 @@ public class SistemaInterno {
     
     private String clave = "Gio";
     
-    public  boolean Autenticar(FuncionarioAutenticable gerente){
+    public  boolean Autenticar(Autenticable gerente){
         boolean puedeIniciarSesion = gerente.iniciarSesion(clave);
         if (puedeIniciarSesion) {
             System.out.println("Login Exitoso!");
