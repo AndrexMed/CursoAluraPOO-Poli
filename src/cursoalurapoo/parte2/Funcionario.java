@@ -4,7 +4,7 @@ package cursoalurapoo.parte2;
  *
  * @author giova
  */
-public abstract class Funcionario {
+public abstract class Funcionario { //Clase abstracta puede tener atributos privados...Puede tener constructor.
     private String nombre;
     private String documento;
     protected double salario;

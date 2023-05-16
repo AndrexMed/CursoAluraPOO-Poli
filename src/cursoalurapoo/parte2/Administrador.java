@@ -13,12 +13,12 @@ public class Administrador extends Funcionario implements Autenticable{ // Esta 
 
     @Override
     public void setClave(String clave) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+
     }
 
     @Override
     public boolean iniciarSesion(String clave) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        return false;
     }
     
 }
